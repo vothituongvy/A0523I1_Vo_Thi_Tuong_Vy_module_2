@@ -2,7 +2,7 @@ package ss1_introduction_to_java;
 
 import java.util.Scanner;
 
-public class ung_dung_doc_so_thanh_chu {
+public class UngDungDocSoThanhChu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập số cần đọc: ");
@@ -241,5 +241,5 @@ public class ung_dung_doc_so_thanh_chu {
         }
 
         System.out.println(number + ":" + result);
-}
+    }
 }
