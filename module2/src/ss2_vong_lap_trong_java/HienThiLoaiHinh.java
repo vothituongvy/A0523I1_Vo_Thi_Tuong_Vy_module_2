@@ -2,7 +2,7 @@ package ss2_vong_lap_trong_java;
 
 import java.util.Scanner;
 
-public class hien_thi_loai_hinh_java {
+public class HienThiLoaiHinh {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
@@ -39,13 +39,13 @@ public class hien_thi_loai_hinh_java {
                                 System.out.print("\n");
                             }
                             break;
-                            //Tam giac vuôg góc vuông ở trên phải
+                        //Tam giac vuôg góc vuông ở trên phải
                         case 2:
                             for (int i = 0; i < 5; i++) {
                                 for (int j = 0; j < 5; j++) {
-                                    if(j<i){
+                                    if (j < i) {
                                         System.out.print(" ");
-                                    }else{
+                                    } else {
                                         System.out.print("*");
                                     }
                                 }
@@ -53,16 +53,16 @@ public class hien_thi_loai_hinh_java {
                                 System.out.println();
                             }
                             break;
-                            //Tam giac vuôg góc vuông ở dưới trái
+                        //Tam giac vuôg góc vuông ở dưới trái
                         case 3:
-                            for (int i = 0; i<5; i++) {
-                                for (int j=0;j<i+1;j++){
+                            for (int i = 0; i < 5; i++) {
+                                for (int j = 0; j < i + 1; j++) {
                                     System.out.print("*");
                                 }
                                 System.out.println();
                             }
                             break;
-                            //Tam giac vuôg góc vuông ở dưới phải
+                        //Tam giac vuôg góc vuông ở dưới phải
                         case 4:
                             for (int i = 1; i <= 5; i++) {
                                 for (int j = 1; j <= 5; j++) {
@@ -77,19 +77,20 @@ public class hien_thi_loai_hinh_java {
                             break;
                     }
                     break;
-                    //In tam giac cân
+                //In tam giac cân
                 case 3:
                     for (int i = 1; i <= 5; i++) {
-                        for (int j = 1; j <= 5-i; j++) {
+                        for (int j = 1; j <= 5 - i; j++) {
                             System.out.print(" ");
                         }
-                        for (int k =1; k <= 2*i-1; k++) {
+                        for (int k = 1; k <= 2 * i - 1; k++) {
                             System.out.print("*");
                         }
                         System.out.println();
                     }
                     break;
-                default:flag=false;
+                default:
+                    flag = false;
                     System.out.println("Bạn đã thoát khỏi chương trình");
             }
         } while (flag);
