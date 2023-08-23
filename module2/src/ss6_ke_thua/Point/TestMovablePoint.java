@@ -1,4 +1,4 @@
-package ss6_ke_thua;
+package ss6_ke_thua.Point;
 
 public class TestMovablePoint {
     public static void main(String[] args) {

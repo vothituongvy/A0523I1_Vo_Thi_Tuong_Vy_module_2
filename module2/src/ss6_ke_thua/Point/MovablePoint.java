@@ -1,4 +1,4 @@
-package ss6_ke_thua;
+package ss6_ke_thua.Point;
 
 public class MovablePoint extends Point{
     private float xSpeed=0.0f;
@@ -32,12 +32,12 @@ public class MovablePoint extends Point{
     public void setySpeed(float ySpeed) {
         this.ySpeed = ySpeed;
     }
-    public void setSpeed(float x,float y){
-        this.x=x;
-        this.y=y;
+    public void setSpeed(float xSpeed,float ySpeed){
+        this.xSpeed=xSpeed;
+        this.ySpeed=ySpeed;
     }
     public float[] getSpeed(){
-        float xy[]={x,y,};
+        float xy[]={xSpeed,ySpeed};
         return xy;
     }
 
