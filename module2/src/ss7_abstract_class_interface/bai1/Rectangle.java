@@ -1,19 +1,48 @@
 package ss7_abstract_class_interface.bai1;
 
-public class Rectangle implements IResizeable{
-    private double length;
-    private double width;
+public class Rectangle  implements IResizeable{
+    private double width = 1.0;
+    private double length = 1.0;
 
-    public Rectangle(double length, double width) {
+    public Rectangle() {
+    }
+
+    public Rectangle(double width, double length) {
+        this.width = width;
         this.length = length;
+    }
+
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public void resize(double percent) {
-        width*= (1 + percent / 100);
-        length *= (1 + percent / 100);
+    public double getLength() {
+        return length;
     }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
     public double getArea() {
-        return length*width;
+        return width * this.length;
+    }
+
+
+    @Override
+    public String toString() {
+        return "A Rectangle with width="
+                + getWidth()
+                + " and length="
+                + getLength();
+    }
+    public void resize(double percent) {
+        width *= 1 + percent / 100;
+        length *= 1+ percent/100.0;
     }
 }
