@@ -4,13 +4,16 @@ public class Student {
     //private chạy chương trình ko được
     //private String name="John";
     //private String classes="C02";
-    public String name="John";
-    public String classes="C02";
-    public Student(){
+    public String name = "John";
+    public String classes = "C02";
+
+    public Student() {
     }
+
     public String setName(String name) {
         return name;
     }
+
     public String setClasses(String classes) {
         return classes;
     }
