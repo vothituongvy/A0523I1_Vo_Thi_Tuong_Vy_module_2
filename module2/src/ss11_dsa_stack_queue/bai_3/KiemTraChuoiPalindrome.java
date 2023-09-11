@@ -2,6 +2,7 @@ package ss11_dsa_stack_queue.bai_3;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class KiemTraChuoiPalindrome {
@@ -25,7 +26,9 @@ public class KiemTraChuoiPalindrome {
     }
 
     public static void main(String[] args) {
-        String str = "able was I ere I saw elba";
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Nhập vào chuỗi muốn kiểm tra:");
+        String str =sc.nextLine();
         if (isPalindrome(str)) {
             System.out.println("Chuỗi là Palindrome");
         } else {
