@@ -1,6 +1,6 @@
 package ss10_dsa_danh_sach;
 
-import ss8_mvc.model.Product;
+
 
 public class MyListTest {
     public static class Student {
